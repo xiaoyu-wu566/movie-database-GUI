@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        maven {
+            setUrl("https://plugins.gradle.org/m2/")
+        }
+    }
+    dependencies {
+        classpath("org.openjfx:javafx-plugin:0.0.8")
+    }
+}
+
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'application'
+    id "com.github.johnrengelman.shadow" version "5.1.0"
+}
+javafx {
+    version = "11"
+    modules = [ 'javafx.controls' ]
+}
+
+mainClassName = 'csce315.group29.DBApplication'
+
+group 'csce315.group29'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.9
+targetCompatibility = 1.9
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.controlsfx', name: 'controlsfx', version: '11.0.0'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.8'
+    compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+    compile group: 'com.google.flatbuffers', name: 'flatbuffers-java', version: '1.11.0'
+}

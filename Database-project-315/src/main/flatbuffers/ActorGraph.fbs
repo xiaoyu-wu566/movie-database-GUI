@@ -1,0 +1,16 @@
+namespace csce315.group29.models;
+table ActorConnection {
+    nconst: string;
+    tconst: string;
+}
+
+table Actor {
+    nconst: string;
+    connections: [ActorConnection];
+}
+
+table ActorGraphCache {
+    data: [Actor];
+}
+
+root_type ActorGraphCache;

@@ -1,0 +1,32 @@
+package csce315.group29.gui;
+
+public enum genres {
+    Horror,
+    Reality_TV,
+    Sport,
+    Action,
+    Mystery,
+    Thriller,
+    News,
+    Family,
+    Comedy,
+    Film_Noir,
+    Adventure,
+    Talk_Show,
+    Crime,
+    History,
+    Documentary,
+    Romance,
+    Drama,
+    Fantasy,
+    Music,
+    Short,
+    Western,
+    Musical,
+    Sci_Fi,
+    Animation,
+    Biography,
+    War,
+    Game_Show,
+    Adult
+}

@@ -1,0 +1,10 @@
+namespace csce315.group29.models;
+
+table ActorNeighborCount {
+    nconst: string;
+    count: int;
+}
+table ActorNeighborCountCache {
+    data: [ActorNeighborCount];
+}
+root_type ActorNeighborCountCache;
